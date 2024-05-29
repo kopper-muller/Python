@@ -1,0 +1,101 @@
+
+def exercicio04():
+    caracter = input("Digite uma letra: ").lower()
+    if caracter == "a" or caracter == "e" or caracter == "i" or caracter == "o" or caracter == "u":
+        print("É uma vogal.")
+    elif len(caracter)!=1:
+        print("Contém mais de uma letra.")
+    elif caracter != "a" and caracter != "b" and caracter != "c" and caracter != "d" and caracter != "e" and caracter != "f" and caracter != "g" and caracter != "h" and caracter != "i" and caracter != "j" and caracter != "k" and caracter != "l" and caracter != "m" and caracter != "n" and caracter != "o" and caracter != "p" and caracter != "q" and caracter != "r" and caracter != "s" and caracter != "t" and caracter != "u" and caracter != "v" and caracter != "w" and caracter != "x" and caracter != "y" and caracter != "z":
+        print("Não é uma Letra.")
+    else:
+        print("É uma consoante.")
+
+
+def exercicio05():
+    numero = float(input("Digite um número: "))
+    if numero==0:
+        print("Número núlo")
+    elif numero<0:
+        print("Número negativo")
+    elif numero>0:
+        print("Número positivo")
+
+
+
+
+def exercicio06():
+    numero = float(input("Digite um número: "))
+    if numero%2==1 and numero>0:
+        print("Número ímpar e positivo ")
+    elif numero%2==0 and numero>0:
+        print("Número não ímpar e positivo ")
+    elif numero%2==1 and numero<0:
+        print("Número ímpar e negativo")
+    elif numero%2==0 and numero<0:
+        print("Número não ímpar e negativo")
+
+
+def exercicio07():
+    numero = float(input("Digite um número: "))
+    if numero>8000:
+        print("Número maior que 8000.")
+    elif numero<8000:
+        print("Número menor que 8000.")
+    elif numero==8000:
+        print("engual a oito mil.")
+
+def exercicio10():
+    numero1 = float(input("diga-me um número: "))
+
+    numero2 = float(input("diga-me outro número: "))
+
+    numero3 = float(input("diga-me um último número: "))
+
+
+    if((numero1>=numero2) and (numero2>=numero3)):
+        print(numero1, numero2, numero3)
+    
+    elif(numero1>=numero3) and (numero3>=numero2):
+        print(numero1, numero3, numero2)
+    
+    elif(numero2>=numero1) and (numero1>=numero3):
+        print(numero2, numero1, numero3)
+        
+    elif(numero2>=numero3) and (numero3>=numero1):
+        print(numero2, numero3, numero1)
+            
+    elif(numero3>=numero2) and (numero2>=numero1):
+        print(numero3, numero2, numero1)
+                
+    elif(numero3>=numero1) and (numero1>=numero2):
+        print(numero3, numero1, numero2)
+
+
+
+def exercicio11():
+    numero1 = float(input("diga-me um número: "))
+
+    numero2 = float(input("diga-me outro número: "))
+
+    numero3 = float(input("diga-me um último número: "))
+
+
+    if((numero1>=numero2) and (numero2>=numero3)):
+        print(numero3, numero2, numero1)
+    
+    elif(numero1>=numero3) and (numero3>=numero2):
+        print(numero2, numero3, numero1)
+    
+    elif(numero2>=numero1) and (numero1>=numero3):
+        print(numero3, numero1, numero2)
+        
+    elif(numero2>=numero3) and (numero3>=numero1):
+        print(numero1, numero3, numero2)
+            
+    elif(numero3>=numero2) and (numero2>=numero1):
+        print(numero1, numero2, numero3)
+                
+    elif(numero3>=numero1) and (numero1>=numero2):
+        print(numero2, numero1, numero3)
+
+exercicio11()
